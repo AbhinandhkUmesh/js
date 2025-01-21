@@ -3,6 +3,6 @@ function emp(id,name,salary){
     this.name=name;
     this.salary=salary;
 } 
-e = new emp(103,"Abhinandh",40000);
+e= new emp(103,"Abhinandh",40000);
 
 console.log(e.id+" "+e.name+" "+e.salary);

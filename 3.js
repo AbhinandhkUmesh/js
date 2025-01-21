@@ -12,3 +12,4 @@ function SimpleInterest(P,R,n){
     let SI =((P*R*n)/100);
     return SI;
 }
+

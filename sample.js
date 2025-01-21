@@ -382,3 +382,181 @@ const prompt = require('prompt-sync')();
 //         console.error("Error ",error.message);
 //     })
 
+
+// let numbers = [1,2,3,4,5,6];
+// let small = Math.min(...numbers);
+// console.log(small);
+
+// function fetchdata(callback){
+//     setTimeout(() => {
+//         let data = "hello";
+//         callback(data)
+//     },1000)
+// }
+
+// fetchdata(result => {
+//     console.log(result)
+// })
+
+
+// function fetchdata(){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             let API =false; 
+//             if(API){
+//                 let data = {
+//                     name: "Abhi",
+//                     id : 123
+//                 }
+//                 resolve(data);
+//             }
+//             else{
+//                 let data = "Error"
+//                 reject(data);
+//             }
+//         },1000);
+//     })
+// }
+// fetchdata()
+//     .then(result => {
+//         console.log("Result is : ",result)
+//     })
+//     .catch(error => {
+//         console.log("Erroorroror",error)
+//     }) 
+
+
+// async function fetchData(){
+//     return await new Promise((resolve,reject) => {
+       
+//             let api = true ;
+//             if(api){
+//                 let data = {
+//                     name : "Abhi",
+//                     id: 123
+//                 }
+//                 resolve(data);
+//             }else{
+//                 let data = "EMpty"
+//                 reject(data);
+//             }
+            
+//     })
+// }
+
+// fetchData()
+//     .then(result => {
+//         console.log("Data :",result)
+//     })
+//     .catch(error => {
+//         console.log("Error: ",error)
+//     })
+
+
+// function largest(num1,num2,num3){
+//     return Math.max(num1,num2,num3);
+// }
+
+// const num1 = 5 ;
+// const num2 = 6;
+// const num3 = 7;
+
+// const largestnum = largest(num1,num2,num3);
+// console.log(largestnum);
+
+// function evenNum(){
+//     let evenNumbers = 0;
+//     while (true){
+//         yield  evenNumbers;
+//         evenNumbers +=2;
+//     }
+// }
+
+// const generator = evenNum();
+
+// for(let i = 0;i < 5;i++){
+//     console.log(generator.next().value);
+// }
+
+
+// let numbers = [ "apple", "banana", "orange", "kiwi", "grapefruit"];
+
+// let largestelement = numbers.reduce((largest , currentElement) => {
+//     if(currentElement.length > largest.length){
+//         return currentElement;
+//     }else{
+//         return largest;
+//     }
+// })
+
+// console.log(largestelement);
+
+// let numbers = [1,2,3,4,5];
+// let firstNumber = numbers.shift();
+// console.log(firstNumber);
+
+// let numbers = [1,2,3,4,5];
+// let number2 = [1,2,3,4,5];
+// let combineNum = numbers.concat(number2);
+// console.log(combineNum)
+
+
+// let numbers = [1,2,3,4,5];
+// let slcieNumber = numbers.splice(0,0,6)
+// console.log(slcieNumber);
+// console.log(numbers);
+
+// let numbers = [1,2,3,4,5];
+// numbers.forEach(num => console.log(num*2));
+
+// let promise = new Promise((resolve,reject) => {
+//     const success=false;
+
+//     if(success){
+//         let data ="hello";
+//         resolve(data);
+//     }
+//     else{
+//         let data = "Error";
+//         reject(data);
+//     }
+// })
+
+// promise
+//     .then(result => {
+//         console.log(result);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     })
+
+// let numbers = [1,3,4,5,6,2];
+// let even = numbers.filter(num => num % 2 === 0)
+// console.log(even);
+
+// function outer(){
+//     let data = "hello"
+//     function inner(){
+//         console.log(data);
+//     }
+//     return inner()
+// }
+// outer()
+
+
+// function demo(){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             let data ="hello";
+//             resolve(data)
+//         },1000)
+//     })
+// }
+
+// demo()
+//     .then(result => {
+//         console.log(result)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
